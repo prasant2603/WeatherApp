@@ -12,17 +12,10 @@ import retrofit2.Response
 class mainViewModel(private val repository: Repository) : ViewModel()
 {
     val myresponse: MutableLiveData<Response<WeatherData>> = MutableLiveData()
-    val testresponse: MutableLiveData<Response<demo>> = MutableLiveData()
     fun getPost(){
         viewModelScope.launch {
             val response = repository.getPost()
             myresponse.value=response
-        }
-    }
-    fun test(){
-        viewModelScope.launch {
-            val response = repository.test()
-            testresponse.value=response
         }
     }
 }
