@@ -1,4 +1,5 @@
 # WeatherApp
+## Fetch the current weather of Ghaziabad City Using WeatherApi
 **Core Concept**
 * Retrofit Libray
 * MVVM Model
